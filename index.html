@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calc</title>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Tax calculator</h1>
+    </header>
+
+    <main>
+        <form>
+            <section>
+                <label for="amount">Monetary amount</label>
+                <input type="number" name="amount" id="amount" required>
+            </section>
+            <section>
+                <label for="tax">Tax rate</label>
+                <input type="number" name="tax" id="tax" required>
+            </section>
+            <button type="submit">Calculate</button>
+        </form>
+
+        <section id="displayamount">
+            <p id="taxAmount" aria-live="polite">Tax amount: </p>
+            <p id="totalAmount" aria-live="polite">Total amount: </p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
